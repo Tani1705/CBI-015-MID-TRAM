@@ -7,41 +7,64 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/daisyui@1.14.0"></script>
 </head>
-<body class="bg-yellow-100 font-sans">
+<header class="bg-yellow-100">
 
-    <!-- Navbar -->
-<div class="flex flex-col lg:flex-row items-center lg:justify-between px-6 py-8 bg-yellow-100">
+<nav class="bg-yellow-100 py-4 flex justify-center">
+  <div class="relative w-full max-w-2xl">
+    <input 
+      type="text" 
+      placeholder="" 
+      class="w-full py-3 pl-12 pr-6 text-gray-700 bg-white border border-gray-300 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
+    />
+    <!-- Search Icon -->
+    <img 
+      src="/desktop/paint-logo.png" 
+      alt="Search"
+      class=" absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6"
+    />
+  </div>
+</nav>
 
-    <div class="lg:w-1/2 space-y-4">
-      <span class="taxt-[#F9B800]">RISUS PRAESENT VULPUTATE</span>
-      <h1 class="text-4xl font-bold leading-snug">
-        Cursus Integer <br />Consequat Tristique.
+
+
+  <div class="px-8 py-12 flex flex-col md:flex-row justify-between items-center">    
+    <!-- Text Section -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <h4 class="text-yellow-600 text-lg font-semibold">RISUS PRAESENT VULPUTATE.</h4>
+      <h1 class="text-5xl font-bold text-black mt-2 leading-tight">
+        Cursus Integer <br> Consequat Tristique.
       </h1>
-
-      <div class="flex gap-2 flex-wrap mt-4">
-        <button class="btn btn-outline rounded-full bg-white text-gray-800 hover:bg-yellow-200">Cursus Integer</button>
-        <button class="btn btn-outline rounded-full bg-white text-gray-800 hover:bg-yellow-200">Integer Consequat</button>
-        
-        <button class="btn btn-outline rounded-full bg-white text-gray-800 hover:bg-yellow-200">Tellus Euismod Pellentesque</button>
-        <button class="btn btn-outline rounded-full bg-white text-gray-800 hover:bg-yellow-200">Aliquot Tristique</button>
-      </div>
-  
-  
-      <button class="btn btn-warning mt-4 rounded-full px-6 text-white">Lorem Ipsum →</button>
-    </div>
-  
-  
-    <div class="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-      <div class="relative">
-        
-        <div class="avatar">
-          <div class="w-48 rounded-lg bg-white shadow-lg p-6">
-            <img src="/desktop/cover-paint.png "  alt="Illustration" class="w-68" />
-          </div>
+      <div class="mt-6 space-y-2">
+        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
+          <span class="text-yellow-600 font-semibold">✔</span>
+          <span class="ml-2">Cursus Integer</span>
+        </div>
+        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
+          <span class="text-yellow-600 font-semibold">✔</span>
+          <span class="ml-2">Integer Consequat</span>
+        </div>
+        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
+          <span class="text-yellow-600 font-semibold">✔</span>
+          <span class="ml-2">Tellus Euismod Pellentesque</span>
+        </div>
+        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
+          <span class="text-yellow-600 font-semibold">✔</span>
+          <span class="ml-2">Aliquot Tristique</span>
         </div>
       </div>
+      <button class="mt-8 bg-yellow-500 text-black font-semibold py-2 px-6 rounded-full hover:bg-yellow-600 transition duration-300 flex items-center">
+        Lorem Ipsum <span class="ml-2">→</span>
+      </button>
+    </div>
+    
+    <!-- Illustration Section -->
+    <div class="md:w-1/2">
+      <img src="desktop/cover-paint.png" alt="Illustration" class="w-full"> <!-- Replace with your actual illustration -->
     </div>
   </div>
+  
+
+</header>
   
 
     
