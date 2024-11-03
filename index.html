@@ -3,81 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Layout with DaisyUI</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/daisyui@1.14.0"></script>
+    <title>Document</title>
 </head>
-<header class="bg-yellow-100">
+<body>
+    <header>
 
-<nav class="bg-yellow-100 py-4 flex justify-center">
-  <div class="relative w-full max-w-2xl">
-    <input 
-      type="text" 
-      placeholder="" 
-      class="w-full py-3 pl-12 pr-6 text-gray-700 bg-white border border-gray-300 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
-    />
-  
-    <img 
-      src="/desktop/paint-logo.png" 
-      alt="Search"
-      class=" absolute left-4 top-1/2 transform -translate-y-1/2 w-6 h-6"
-    />
-  </div>
-</nav>
-
-
-
-  <div class="px-8 py-12 flex flex-col md:flex-row justify-between items-center">    
-    
-    <div class="md:w-1/2 mb-8 md:mb-0">
-      <h4 class="text-yellow-600 text-lg font-semibold">RISUS PRAESENT VULPUTATE.</h4>
-      <h1 class="text-5xl font-bold text-black mt-2 leading-tight">
-        Cursus Integer <br> Consequat Tristique.
-      </h1>
-      <div class="mt-6 space-y-2">
-        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
-          <span class="text-yellow-600 font-semibold">✔</span>
-          <span class="ml-2">Cursus Integer</span>
-        </div>
-        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
-          <span class="text-yellow-600 font-semibold">✔</span>
-          <span class="ml-2">Integer Consequat</span>
-        </div>
-        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
-          <span class="text-yellow-600 font-semibold">✔</span>
-          <span class="ml-2">Tellus Euismod Pellentesque</span>
-        </div>
-        <div class="flex items-center bg-white rounded-full px-2 py-2 shadow-sm w-fit">
-          <span class="text-yellow-600 font-semibold">✔</span>
-          <span class="ml-2">Aliquot Tristique</span>
+        <nav class="bg-yellow-100 py-4 flex justify-center">
+            <div class="relative w-full max-w-2xl">
+              <input 
+                type="text" 
+                placeholder="" 
+                class="w-full py-3 pl-12 pr-6 text-gray-700 bg-white border border-gray-300 rounded-full outline-none focus:ring-2 focus:ring-yellow-500 transition"
+              />
+              <!-- Search Icon -->
+              <div class=" flex items-center">
+                <img src="/desktop/paint-logo.png" alt="Search"
+                class=" absolute  left-4 top-1/2 transform -translate-y-1/2 w-6 h-6"
+              />
+              </div>
+            </div>
+          </nav>
+        <!--hero-->
+        <div class="bg-yellow-100 min-h-screen p-4 sm:p-8">
+            <div class="max-w-6xl mx-auto">
+              <div class="flex flex-col lg:flex-row items-center justify-between">
+                <div class="lg:w-1/2 mb-8 lg:mb-0">
+                  <p class="text-yellow-400 font-bold mb-2 text-sm sm:text-base">RISUS PRAESENT VULPUTATE</p>
+                  <h2 class="text-2xl sm:text-4xl font-bold mb-4">Cursus Integer Consequat Tristique.</h2>
+                  <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-white rounded-full px-3 py-1 text-xs sm:text-sm">Cursus Integer</span>
+                    <span class="bg-white rounded-full px-3 py-1 text-xs sm:text-sm">Integer Consequat</span>
+                    <span class="bg-white rounded-full px-3 py-1 text-xs sm:text-sm">Tellus Euismod Pellentesque</span>
+                    <span class="bg-white rounded-full px-3 py-1 text-xs sm:text-sm">Aliquot Tristique</span>
+                  </div>
+                  <button class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded-full text-sm sm:text-base">
+                    Lorem Ipsum
+                  </button>
+                </div>
+                <div class="lg:w-1/2">
+                  <img src="/desktop/cover-paint.png" alt="Hero Illustration" class="w-full" />
+                </div>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main>
+     <!--Features Section-->
+     <div class="bg-gray-900 text-white py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-8">
+          <div class="mb-12">
+            <p class="text-yellow-400 mb-2 text-sm sm:text-base">Quisque portitor eros vel amet risque condimentum metus.</p>
+            <h2 class="text-2xl sm:text-3xl font-bold">Cursus Integer Conseq Aliquam Tristique.</h2>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white text-gray-900 p-6 rounded-lg">
+              <div class="bg-yellow-400 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <span class="text-2xl">1</span>
+              </div>
+              <h3 class="font-bold mb-2">Phasellus Vitae</h3>
+              <p class="text-sm">Quisque portitor eros nec amet risque condimentum metus.</p>
+            </div>
+            <div class="bg-yellow-400 text-gray-900 p-6 rounded-lg">
+              <div class="bg-white w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <span class="text-2xl">2</span>
+              </div>
+              <h3 class="font-bold mb-2">Mauris Magna</h3>
+              <p class="text-sm">Portitor eros nec tellus amet risque condimentum metus.</p>
+            </div>
+            <div class="bg-yellow-400 text-gray-900 p-6 rounded-lg">
+              <div class="bg-white w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <span class="text-2xl">3</span>
+              </div>
+              <h3 class="font-bold mb-2">Eleifend Pulvinar</h3>
+              <p class="text-sm">Condimentum metus quisque portitor eros nec tellus amet risque.</p>
+            </div>
+            <div class="bg-white text-gray-900 p-6 rounded-lg">
+              <div class="bg-yellow-400 w-12 h-12 flex items-center justify-center rounded-full mb-4">
+                <span class="text-2xl">4</span>
+              </div>
+              <h3 class="font-bold mb-2">Velit Odio Phir</h3>
+              <p class="text-sm">Metus quisque portitor eros nec tellus amet risque condimentum.</p>
+            </div>
+          </div>
         </div>
       </div>
-      <button class="mt-8 bg-yellow-500 text-black font-semibold py-2 px-6 rounded-full hover:bg-yellow-600 transition duration-300 flex items-center">
-        Lorem Ipsum <span class="ml-2">→</span>
-      </button>
-    </div>
-    
-    
-    <div class="md:w-1/2">
-      <img src="desktop/cover-paint.png" alt="Illustration" class="w-full"> 
+ <!--Testimonial Section-->
+
+ <div class="bg-yellow-400 py-12 sm:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-8">
+      <div class="bg-white rounded-lg p-6 sm:p-8 flex flex-col sm:flex-row items-center">
+        <img src="/desktop/male-photo.png" alt="Testimonial" class="w-24 h-24 rounded-full mb-4 sm:mb-0 sm:mr-8" />
+        <div>
+          <h3 class="text-xl sm:text-2xl font-bold mb-4">What our customers thought?</h3>
+          <p class="mb-4 text-sm sm:text-base">Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis.</p>
+          <p class="font-bold">Kelly Davidson</p>
+        </div>
+      </div>
     </div>
   </div>
-    
-</header>
-  
 
-    
+  <div class="bg-gray-900 text-white py-12 sm:py-16">
+  <div class="max-w-4xl mx-auto px-4 sm:px-8">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Phasellus a vitae iaculis magna.</h2>
+    <p class="text-center mb-8 sm:mb-12 text-sm sm:text-base">Phasellus a vitae iaculis magna elefend pulvinar velit odio.</p>
+    <div class="space-y-4">
+      <div class="bg-gray-800 p-4 sm:p-6 rounded-lg">
+        <h3 class="font-bold mb-2 flex items-center justify-between cursor-pointer text-sm sm:text-base">
+          Quam vehicula faucibus amet lorem.
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </h3>
+        <p class="text-gray-400 text-sm sm:text-base">Euismod magna id purus eget nunc ligula suspendisse dui netus. Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis. Mauris fermentum praesent tellus euismod pellentesque urna ac massa in.</p>
+      </div>
+      <div class="bg-gray-800 p-4 sm:p-6 rounded-lg">
+        <h3 class="font-bold mb-2 flex items-center justify-between cursor-pointer text-sm sm:text-base">
+          Pellentesque tempus sed phasellus vel.
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </h3>
+      </div>
+      <div class="bg-gray-800 p-4 sm:p-6 rounded-lg">
+        <h3 class="font-bold mb-2 flex items-center justify-between cursor-pointer text-sm sm:text-base">
+          Mauris fermentum praesent tellus euismod pellentesque urna ac massa in.
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </h3>
+      </div>
+      <div class="bg-gray-800 p-4 sm:p-6 rounded-lg">
+        <h3 class="font-bold mb-2 flex items-center justify-between cursor-pointer text-sm sm:text-base">
+          Vulputate et vulputate suspendisse natoque id tellus consectetur pulvinar et.
+          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+    </main>
 
+      <footer class="bg-yellow-100 py-6 sm:py-8">
+        <div class="bg-yellow-100 py-12 sm:py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-8 text-center">
+              <h2 class="text-2xl sm:text-3xl font-bold mb-4">Vulputate et pulvinar ethre Suspendisse tellus consecteur</h2>
+              <button class="bg-yellow-400 text-black font-semibold py-2 px-6 rounded-full text-sm sm:text-base">
+                Lorem Ipsum
+              </button>
+            </div>
+          </div>
 
-    <!-- Footer -->
-    <footer class="bg-yellow-200 py-4 text-center">
-        <div class="container mx-auto">
-            <p class="text-sm">© 2023 Your Company. All rights reserved.</p>
-            <button class="btn btn-primary mt-2">Learn More</button>
+        <div class="max-w-6xl mx-auto px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center">
+          <p class="mb-4 sm:mb-0 text-sm sm:text-base">&copy; 2024 Lorem Ipsum</p>
+          <div class="flex flex-col sm:flex-row items-center">
+            <a href="#" class="text-gray-600 hover:text-gray-900 mb-2 sm:mb-0 sm:mr-4 text-sm sm:text-base">Privacy Policy</a>
+            <a href="#" class="text-gray-600 hover:text-gray-900 text-sm sm:text-base">Terms and Conditions</a>
+          </div>
         </div>
-    </footer>
-
+      </footer>
 </body>
 </html>
